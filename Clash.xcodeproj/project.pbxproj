@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFE0078414162B43003172A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE0078314162B43003172A8 /* Cocoa.framework */; };
+		BFE0078E14162B43003172A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFE0078C14162B43003172A8 /* InfoPlist.strings */; };
+		BFE0079014162B43003172A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0078F14162B43003172A8 /* main.m */; };
+		BFE0079414162B43003172A8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BFE0079214162B43003172A8 /* Credits.rtf */; };
+		BFE0079714162B43003172A8 /* ClashDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE0079614162B43003172A8 /* ClashDocument.m */; };
+		BFE0079A14162B43003172A8 /* ClashDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE0079814162B43003172A8 /* ClashDocument.xib */; };
+		BFE0079D14162B44003172A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE0079B14162B44003172A8 /* MainMenu.xib */; };
+		BFE007AB14162D0E003172A8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE007AA14162D0E003172A8 /* QuartzCore.framework */; };
+		BFE007AE14162D22003172A8 /* ClashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE007AD14162D22003172A8 /* ClashViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFE0077F14162B43003172A8 /* Clash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE0078314162B43003172A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BFE0078614162B43003172A8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BFE0078714162B43003172A8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BFE0078814162B43003172A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFE0078B14162B43003172A8 /* Clash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clash-Info.plist"; sourceTree = "<group>"; };
+		BFE0078D14162B43003172A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFE0078F14162B43003172A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFE0079114162B43003172A8 /* Clash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clash-Prefix.pch"; sourceTree = "<group>"; };
+		BFE0079314162B43003172A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BFE0079514162B43003172A8 /* ClashDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClashDocument.h; sourceTree = "<group>"; };
+		BFE0079614162B43003172A8 /* ClashDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClashDocument.m; sourceTree = "<group>"; };
+		BFE0079914162B43003172A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ClashDocument.xib; sourceTree = "<group>"; };
+		BFE0079C14162B44003172A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BFE007AA14162D0E003172A8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../../../../System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
+		BFE007AC14162D22003172A8 /* ClashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClashViewController.h; sourceTree = "<group>"; };
+		BFE007AD14162D22003172A8 /* ClashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClashViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFE0077C14162B43003172A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE0078414162B43003172A8 /* Cocoa.framework in Frameworks */,
+				BFE007AB14162D0E003172A8 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFE0077414162B43003172A8 = {
+			isa = PBXGroup;
+			children = (
+				BFE0078914162B43003172A8 /* Clash */,
+				BFE0078214162B43003172A8 /* Frameworks */,
+				BFE0078014162B43003172A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFE0078014162B43003172A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0077F14162B43003172A8 /* Clash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFE0078214162B43003172A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0078314162B43003172A8 /* Cocoa.framework */,
+				BFE0078514162B43003172A8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFE0078514162B43003172A8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFE007AA14162D0E003172A8 /* QuartzCore.framework */,
+				BFE0078614162B43003172A8 /* AppKit.framework */,
+				BFE0078714162B43003172A8 /* CoreData.framework */,
+				BFE0078814162B43003172A8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BFE0078914162B43003172A8 /* Clash */ = {
+			isa = PBXGroup;
+			children = (
+				BFE007AC14162D22003172A8 /* ClashViewController.h */,
+				BFE007AD14162D22003172A8 /* ClashViewController.m */,
+				BFE0079514162B43003172A8 /* ClashDocument.h */,
+				BFE0079614162B43003172A8 /* ClashDocument.m */,
+				BFE0079814162B43003172A8 /* ClashDocument.xib */,
+				BFE0079B14162B44003172A8 /* MainMenu.xib */,
+				BFE0078A14162B43003172A8 /* Supporting Files */,
+			);
+			path = Clash;
+			sourceTree = "<group>";
+		};
+		BFE0078A14162B43003172A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFE0078B14162B43003172A8 /* Clash-Info.plist */,
+				BFE0078C14162B43003172A8 /* InfoPlist.strings */,
+				BFE0078F14162B43003172A8 /* main.m */,
+				BFE0079114162B43003172A8 /* Clash-Prefix.pch */,
+				BFE0079214162B43003172A8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFE0077E14162B43003172A8 /* Clash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE007A014162B44003172A8 /* Build configuration list for PBXNativeTarget "Clash" */;
+			buildPhases = (
+				BFE0077B14162B43003172A8 /* Sources */,
+				BFE0077C14162B43003172A8 /* Frameworks */,
+				BFE0077D14162B43003172A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clash;
+			productName = Clash;
+			productReference = BFE0077F14162B43003172A8 /* Clash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFE0077614162B43003172A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "大阪大学";
+			};
+			buildConfigurationList = BFE0077914162B43003172A8 /* Build configuration list for PBXProject "Clash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFE0077414162B43003172A8;
+			productRefGroup = BFE0078014162B43003172A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFE0077E14162B43003172A8 /* Clash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFE0077D14162B43003172A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE0078E14162B43003172A8 /* InfoPlist.strings in Resources */,
+				BFE0079414162B43003172A8 /* Credits.rtf in Resources */,
+				BFE0079A14162B43003172A8 /* ClashDocument.xib in Resources */,
+				BFE0079D14162B44003172A8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFE0077B14162B43003172A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE0079014162B43003172A8 /* main.m in Sources */,
+				BFE0079714162B43003172A8 /* ClashDocument.m in Sources */,
+				BFE007AE14162D22003172A8 /* ClashViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFE0078C14162B43003172A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE0078D14162B43003172A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BFE0079214162B43003172A8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE0079314162B43003172A8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BFE0079814162B43003172A8 /* ClashDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE0079914162B43003172A8 /* en */,
+			);
+			name = ClashDocument.xib;
+			sourceTree = "<group>";
+		};
+		BFE0079B14162B44003172A8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFE0079C14162B44003172A8 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFE0079E14162B44003172A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BFE0079F14162B44003172A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BFE007A114162B44003172A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clash/Clash-Prefix.pch";
+				INFOPLIST_FILE = "Clash/Clash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BFE007A214162B44003172A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clash/Clash-Prefix.pch";
+				INFOPLIST_FILE = "Clash/Clash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFE0077914162B43003172A8 /* Build configuration list for PBXProject "Clash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE0079E14162B44003172A8 /* Debug */,
+				BFE0079F14162B44003172A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE007A014162B44003172A8 /* Build configuration list for PBXNativeTarget "Clash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFE007A114162B44003172A8 /* Debug */,
+				BFE007A214162B44003172A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFE0077614162B43003172A8 /* Project object */;
+}
