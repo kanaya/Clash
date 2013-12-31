@@ -2,7 +2,7 @@
 //  ClashViewController.m
 //  Clash
 //
-//  Created by 金谷 一朗 on 11/09/06.
+//  Created by Ichi Kanaya on 11/09/06.
 //  Copyright (c) 2011 大阪大学. All rights reserved.
 //
 
@@ -17,13 +17,13 @@
 
 
 - (CGFloat) mmToPix: (CGFloat)x {
-	NSRect currentViewFrame = [view frame];
+  NSRect currentViewFrame = [view frame];
 	CGFloat currentViewSizeX = currentViewFrame.size.width;
 	CGFloat currentViewSizeY = currentViewFrame.size.height;
 	CGFloat currentViewSizeYMultipliedByAspectRatio = currentViewSizeY * viewAspectRatio;
 	CGFloat viewRatio;
 	if (currentViewSizeX >= currentViewSizeYMultipliedByAspectRatio) {
-		viewRatio = defaultViewRatio * currentViewSizeY / defalutViewSizeY;
+    viewRatio = defaultViewRatio * currentViewSizeY / defalutViewSizeY;
 	}
 	else {
 		viewRatio = defaultViewRatio * currentViewSizeX / defaultViewSizeX;
@@ -41,7 +41,7 @@
 		backgroundLayer.backgroundColor = blackColor;
 		CGColorRelease(blackColor);
 		layers = nil;
-	}
+  }
 	return self;
 }
 
@@ -54,7 +54,7 @@
 
 - (IBAction)go: (id)sender {
 	if (layers) {
-		for (NSString *ident in layers) {
+    for (NSString *ident in layers) {
 			CALayer *layer = [layers objectForKey: ident];
 			[layer removeFromSuperlayer];
 			layer = nil;
@@ -90,7 +90,6 @@
 	NSXMLElement *frameElement = [frameElements objectAtIndex: 0];
 	NSArray *imageElements = [frameElement elementsForName: @"image"];
 	for (NSXMLElement *imageElement in imageElements) {
-		// NSString *text = [imageElement stringValue];
 		NSXMLNode *source = [imageElement attributeForName: @"source"];  // source must be a valid URL
 		NSXMLNode *ident = [imageElement attributeForName: @"id"];
 		NSXMLNode *position_x = [imageElement attributeForName: @"position_x"];
@@ -100,7 +99,6 @@
 		NSXMLNode *alpha = [imageElement attributeForName: @"alpha"];
 		// Download the image
 		NSURL *bitmapImageURL = [NSURL URLWithString: [source stringValue]];
-		// NSBitmapImageRep *bitmapImage = [NSBitmapImageRep imageRepWithContentsOfURL: bitmapImageURL];
     NSImage *bitmapImage = [[NSImage alloc] initWithContentsOfURL: bitmapImageURL];
 		CGFloat positionX = [self mmToPix: [[position_x stringValue] floatValue]];
 		CGFloat positionY = [self mmToPix: [[position_y stringValue] floatValue]];
@@ -111,7 +109,6 @@
 			// Create a layer and set the image to the layer
 			// CGImageRef image = [bitmapImage CGImage];
 			CALayer *layerToAdd = [CALayer layer];
-			// layerToAdd.contents = (id)CFBridgingRelease(image);  // ARC ready
 			layerToAdd.contents = bitmapImage;
 			layerToAdd.frame = CGRectMake(positionX, positionY, sizeX, sizeY);
 			layerToAdd.opacity = alphaValue;
