@@ -100,8 +100,8 @@
 		NSXMLNode *alpha = [imageElement attributeForName: @"alpha"];
 		// Download the image
 		NSURL *bitmapImageURL = [NSURL URLWithString: [source stringValue]];
-		NSBitmapImageRep *bitmapImage 
-			= [NSBitmapImageRep imageRepWithContentsOfURL: bitmapImageURL];
+		// NSBitmapImageRep *bitmapImage = [NSBitmapImageRep imageRepWithContentsOfURL: bitmapImageURL];
+    NSImage *bitmapImage = [[NSImage alloc] initWithContentsOfURL: bitmapImageURL];
 		CGFloat positionX = [self mmToPix: [[position_x stringValue] floatValue]];
 		CGFloat positionY = [self mmToPix: [[position_y stringValue] floatValue]];
 		CGFloat sizeX = [self mmToPix: [[size_x stringValue] floatValue]];
@@ -109,9 +109,10 @@
 		CGFloat alphaValue = [[alpha stringValue] floatValue];
 		if (bitmapImage) {
 			// Create a layer and set the image to the layer
-			CGImageRef image = [bitmapImage CGImage];
+			// CGImageRef image = [bitmapImage CGImage];
 			CALayer *layerToAdd = [CALayer layer];
-			layerToAdd.contents = (id)image;
+			// layerToAdd.contents = (id)CFBridgingRelease(image);  // ARC ready
+			layerToAdd.contents = bitmapImage;
 			layerToAdd.frame = CGRectMake(positionX, positionY, sizeX, sizeY);
 			layerToAdd.opacity = alphaValue;
 			// must set up geometry and transformation and color etc.
