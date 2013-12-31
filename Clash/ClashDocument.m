@@ -11,7 +11,7 @@
 @implementation ClashDocument
 
 - (id)init {
-	self = [super init];
+  self = [super init];
 	if (self) {
 		// Add your subclass-specific initialization here.
 		// If an error occurs here, return nil.
@@ -41,12 +41,9 @@
 	// You can also choose to override -fileWrapperOfType:error:, 
 	// -writeToURL:ofType:error:, or -writeToURL:ofType: forSaveOperation:
 	// originalContentsURL: error: instead.
-	NSException *exception 
-		= [NSException exceptionWithName: @"UnimplementedMethod"
-															reason: [NSString stringWithFormat: 
-																				@"%@ is unimplemented", 
-																				NSStringFromSelector(_cmd)] 
-														userInfo: nil];
+	NSException *exception = [NSException exceptionWithName: @"UnimplementedMethod"
+                                                   reason: [NSString stringWithFormat: @"%@ is unimplemented", NSStringFromSelector(_cmd)]
+                                                 userInfo: nil];
 	@throw exception;
 	return nil;
 }
@@ -59,12 +56,9 @@
 	// appropriate error when returning NO.
 	// You can also choose to override -readFromFileWrapper: ofType:error: or 
 	// -readFromURL: ofType:error: instead.
-	NSException *exception 
-		= [NSException exceptionWithName: @"UnimplementedMethod" 
-															reason: [NSString stringWithFormat: 
-																			 @"%@ is unimplemented", 
-																			 NSStringFromSelector(_cmd)] 
-														userInfo: nil];
+	NSException *exception = [NSException exceptionWithName: @"UnimplementedMethod"
+                                                   reason: [NSString stringWithFormat: @"%@ is unimplemented", NSStringFromSelector(_cmd)]
+                                                 userInfo: nil];
 	@throw exception;
 	return YES;
 }
