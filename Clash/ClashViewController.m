@@ -111,7 +111,7 @@
 			// Create a layer and set the image to the layer
 			CGImageRef image = [bitmapImage CGImage];
 			CALayer *layerToAdd = [CALayer layer];
-			layerToAdd.contents = (id)image;
+			layerToAdd.contents = (id)CFBridgingRelease(image);  // ARC ready
 			layerToAdd.frame = CGRectMake(positionX, positionY, sizeX, sizeY);
 			layerToAdd.opacity = alphaValue;
 			// must set up geometry and transformation and color etc.
